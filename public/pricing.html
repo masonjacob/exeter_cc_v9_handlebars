@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pricing</title>
+    <!--<link rel="icon" type="image/x-icon" href="/images/favicon.ico"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  </head>
+  <body id="body" class="light-mode">
+    <!-- Header Bar -->
+    <div id="header">
+    </div>
+    <!-- End Header Bar -->
+    <div class="page">
+      <div class="content">
+        <div id="pricing-today" class="section">
+          <div>
+            <h2 class="section-header">Today's Pricing <span class="current-date"></span></h2>
+            <div class="flex-section flex-even">
+              <div>
+                <h3 id="morning-heading" class="section-subheader">Morning (Before <span class="pricing-time-change-text"> 12:00 PM</span>):</h3>
+                <ul id="morning-pricing-list" class="pricing-list">
+                  <li class="pricing-list-item">18H Riding: <strong>$<span class="eighteen-riding-text">-</span></strong></li>
+                  <li class="pricing-list-item">18H Walking: <strong>$<span class="eighteen-walking-text">-</span></strong></li>
+                  <br>
+                  <li class="pricing-list-item">9H Riding: <strong>$<span class="nine-riding-text">-</span></strong></li>
+                  <li class="pricing-list-item">9H Walking: <strong>$<span class="nine-walking-text">-</span></strong></li>
+                </ul>
+              </div>
+              <div>
+                <h3 id="afternoon-heading" class="section-subheader">Afternoon (After <span class="pricing-time-change-text"> 12:00 PM</span>):</h3>
+                <ul id="afternoon-pricing-list" class="pricing-list">
+                  <li class="pricing-list-item">18H Riding: <strong>$<span class="eighteen-riding-text">-</span></strong></li>
+                  <li class="pricing-list-item">18H Walking: <strong>$<span class="eighteen-walking-text">-</span></strong></li>
+                  <br>
+                  <li class="pricing-list-item">9H Riding: <strong>$<span class="nine-riding-text">-</span></strong></li>
+                  <li class="pricing-list-item">9H Walking: <strong>$<span class="nine-walking-text">-</span></strong></li>
+                </ul> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="section-break">
+        <div id="general-pricing" class="flex-section flex-even">
+          <div>
+            <h2 class="section-header">General Pricing<span class="current-date"></span></h2>
+            <ul id="general-pricing-list">
+              
+            </ul>
+          </div>
+          <img src="./images/golf-bag.jpg" alt="Picture of Golf Bag">
+      </div>
+    </div>
+    <div id="footer">
+    </div>
+    </div>
+  <script>
+    // Load Header and Footer
+    $(function () {
+      $("#header").load("header");
+      $("#footer").load("footer");
+    });
+  </script>
+  <script src="js/index.js"></script>
+  </body>
+</html>

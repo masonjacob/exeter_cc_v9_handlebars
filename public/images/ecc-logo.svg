@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 255.23 132.03">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: EdwardianScriptITC, 'Edwardian Script ITC';
+        font-size: 115px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #3e6a35;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #3d060f;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        font-family: MicrosoftTaiLe, 'Microsoft Tai Le';
+        font-size: 26px;
+        letter-spacing: .1em;
+      }
+    </style>
+  </defs>
+  <text class="cls-1" transform="translate(0 94.3)"><tspan x="0" y="0">Exeter</tspan></text>
+  <text class="cls-2" transform="translate(34.07 121.82)"><tspan x="0" y="0">COUNTRY CLUB</tspan></text>
+  <line class="cls-3" x1="27.48" y1="100.96" x2="255.23" y2="100.96"/>
+  <line class="cls-3" x1="27.48" y1="124.96" x2="255.23" y2="124.96"/>
+</svg>

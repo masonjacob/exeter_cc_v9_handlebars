@@ -1,0 +1,35 @@
+{
+    "base-price": 40,
+    "day-modifier": {
+      "weekday": 0,
+      "weekend": 5,
+      "holiday": 5
+    },
+    "time-of-day-modifier": {
+      "morning": 0,
+      "afternoon": -5
+    },
+    "age-modifier": {
+      "child": -20,
+      "adult": 0,
+      "senior": -5
+    },
+    "season-modifier": {
+      "spring": -10,
+      "summer": 0,
+      "fall": -10,
+      "winter": -20
+    },
+    "play-type-modifier": {
+      "nine-holes": -20,
+      "eighteen-holes": 0
+    },
+    "vehicle-modifier": {
+      "walking": 0,
+      "pull-cart": 3,
+      "riding":20
+    },
+    "rental-modifier": {
+      "rental": 20
+    }
+}

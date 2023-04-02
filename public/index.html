@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exeter Country Club</title>
+    <!--<link rel="icon" type="image/x-icon" href="/images/favicon.ico"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  </head>
+  <body id="body" class="light-mode">
+    <!-- Header Bar -->
+    <div id="header">
+      
+    </div>
+    <!-- End Header Bar -->
+    <div class="page">
+      <div class="slideshow-container">
+          <img class="slide" src="images/slideshow/1.jpeg" alt="Photo 1 of the Exeter Country Club">
+          <img class="slide" src="images/slideshow/2.jpeg" alt="Photo 2 of the Exeter Country Club">
+          <img class="slide" src="images/slideshow/3.jpeg" alt="Photo 3 of the Exeter Country Club">
+          <img class="slide" src="images/slideshow/4.jpeg" alt="Photo 4 of the Exeter Country Club">
+          <img class="slide" src="images/slideshow/5.jpeg" alt="Photo 5 of the Exeter Country Club">
+          <div id="slideshow-text">WELCOME TO THE<br>EXETER COUNTRY CLUB</div>
+          <hr id="slideshow-line">
+      </div>
+      <div class="content">
+        <div class="section flex-section">
+          <img src="images/sign.jpg" alt="Exeter Country Club Sign" style="margin-right: 5%;">
+          <div>
+            <h2 class="section-header">Who We Are</h2>
+            <div class="section-text">
+              <p>Located in the tranquil country-side of Exeter, Rhode Island,
+                The Exeter Country Club offers a premier golf experience like no other. 
+                Long considered one of Rhode Island's finest championship golf courses, 
+                ECC is accessible to the public and provides an enjoyable challenge for players of all abilities.</p>
+                <p>With rolling lush fairways, scenic views, carefully manicured greens, and a country setting, 
+                The ECC provides a relaxing golf experience. Whether you're looking for a casual round with your family, 
+                or a competitive match with the gang, you'll find ECC has what it takes to satisfy all your golfing needs.</p>
+                <p>The ECC is a proud member of the Rhode Island Golf Association (RIGA) and the United States Golf Association (USGA).</p> 
+            </div>
+          </div>
+        </div>
+        <hr class="section-break">
+        <div class="section flex-section">
+          <div>
+            <h2 class="section-header">History</h2>
+            <div class="section-text">
+              <p>Designed by renowned architect Geoffrey Cornish, the Exeter Country Club was built in 1969 by 
+                the Hendrick family, who continue to operate the course to this day.</p>
+            </div>
+          </div>
+          <img src="images/course-fall.jpg" alt="Exeter Country Club during the fall" style="margin-left: 5%;">
+        </div>
+        <hr class="section-break">
+        <div id="contact-form-div" class="section-full-width">
+          <div class="flex-down-section">
+            <h2 class="section-header static-white">Contact Us</h2>
+            <form id="contact-form" class="form half-width-centered">
+            <div class="flex-down-section input-padding input-margin">
+              <label for="fname">First Name</label>
+              <input class="text-field default-padding" type="text" id="fname" name="firstname" placeholder="Your name..">
+              <label for="lname">Last Name</label>
+              <input class="text-field" type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <label for="phone">Phone Number</label>
+              <input class="text-field" type="tel" id="phone" name="phone" placeholder="XXXXXXXXXX">
+          
+              <label for="subject">Subject</label>
+              <textarea class="text-field" id="subject" name="subject" placeholder="Write something.."></textarea>
+              <div>
+                <input id="submit-button" class="generic-button" type="submit" value="Submit">
+              </div>
+            </div>
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+    </div>
+  <script>
+    // Load Header and Footer
+    $(function () {
+      $("#header").load("header");
+      $("#footer").load("footer");
+    });
+  </script>
+  <script src="js/index.js"></script>
+  </body>
+</html>
