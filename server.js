@@ -3,17 +3,45 @@ const app = express();
 const port = 1337;
 const dir = __dirname + '/public/';
 
+const handlebars = require('express-handlebars').create({defaultLayout: false});
+app.engine('handlebars', handlebars.engine);
+app.set('view engine', 'handlebars');
+
+
 app.use(express.static('public'));
-app.use(express.static('public/img'));
+app.use(express.static('public/css'));
+app.use(express.static('public/images'));
+app.use(express.static('public/js'));
 
 app.get('/', (request, response) => {
-    response.sendFile(dir + 'index.html');
+    response.render('index', {
+        title: 'Home' 
+    });
 });
 app.get('/index', (request, response) => {
-    response.sendFile(dir + 'index.html');
+    response.render('index', {
+        title: 'Home' 
+    });
 });
 app.get('/home', (request, response) => {
-    response.sendFile(dir + 'index.html');
+    response.render('index', {
+        title: 'Home' 
+    });
+});
+app.get('/pricing', (request, response) => {
+    response.render('pricing', {
+        title: 'Pricing' 
+    });
+});
+app.get('/tee-times', (request, response) => {
+    response.render('tee-times', {
+        title: 'Tee Times' 
+    });
+});
+app.get('/calendar', (request, response) => {
+    response.render('calendar', {
+        title: 'Calendar' 
+    });
 });
 app.get('/header', (request, response) => {
     response.sendFile(dir + 'header.html');
@@ -21,17 +49,14 @@ app.get('/header', (request, response) => {
 app.get('/footer', (request, response) => {
     response.sendFile(dir + 'footer.html');
 });
-app.get('/pricing', (request, response) => {
-    response.sendFile(dir + 'pricing.html');
+
+app.use((request, response) =>{
+    response.status(404);
+    response.render('404', {title: 'Not Found'});
 });
-app.get('/tee-times', (request, response) => {
-    response.sendFile(dir + 'tee-times.html');
-});
-app.get('/calendar', (request, response) => {
-    response.sendFile(dir + 'calendar.html');
-});
-app.get('/*', (request, response) =>{
-    response.sendFile(dir + '404.html');
+app.use((request, response) =>{
+    response.status(500);
+    response.render('500');
 });
 
 app.listen(port, () => {
